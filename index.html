@@ -61,7 +61,7 @@ header:not(.solid) .brand{color:#fff}
 .brand{white-space:nowrap}
 @media(max-width:400px){.brand small{display:none}.brand img{width:38px;height:38px}}
 .brand small{display:block;font-weight:500;font-size:.62rem;letter-spacing:.16em;opacity:.75}
-.menu{display:flex;gap:6px;list-style:none;padding:4px;background:rgba(255,255,255,.7);border-radius:12px;backdrop-filter:blur(8px)}
+.menu{display:flex;gap:6px;list-style:none;padding:4px;background:rgba(255,255,255,.7);border-radius:12px;backdrop-filter:blur(8px);margin-inline:auto}
 .menu a{display:block;text-decoration:none;font-size:.84rem;font-weight:500;padding:8px 14px;border-radius:9px;transition:background .2s}
 .menu a:hover{background:var(--sage)}
 .nav .btn{min-height:42px;padding:0 18px;font-size:.84rem}
@@ -239,7 +239,8 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 .rv.in{opacity:1;transform:none}
 .rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
-.lang{display:flex;background:rgba(255,255,255,.75);border-radius:999px;padding:3px;margin-left:auto;margin-right:10px}
+.lang{display:flex;background:rgba(255,255,255,.75);border-radius:999px;padding:3px;margin-right:10px}
+@media(max-width:940px){.lang{margin-left:auto}}
 .lang button{font:700 .72rem Montserrat,sans-serif;border:0;background:none;padding:7px 11px;border-radius:999px;cursor:pointer;color:var(--forest);letter-spacing:.06em}
 .lang button[aria-pressed=true]{background:var(--forest);color:#fff}
 </style>
